@@ -48,27 +48,39 @@
       background-color: #fff2d9;
     }
 
-    .produits-en-vedette {
+    .categories-lampes {
       padding: 40px 20px;
+      text-align: center;
     }
 
-    .grille-produits {
+    .grille-categories {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 30px;
+      margin-top: 30px;
     }
 
-    .carte-produit {
+    .carte-categorie {
       background-color: #fff;
       border: 1px solid #ddd0ba;
       border-radius: 10px;
       padding: 15px;
       text-align: center;
+      transition: transform 0.2s;
     }
 
-    .carte-produit img {
+    .carte-categorie:hover {
+      transform: scale(1.05);
+    }
+
+    .carte-categorie img {
       max-width: 100%;
       border-radius: 8px;
+    }
+
+    .carte-categorie h3 {
+      margin-top: 10px;
+      color: #5a4e3c;
     }
 
     .btn {
@@ -96,12 +108,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="lampes-de-table.html">Lampe de table</a></li>
-        <li><a href="lampes-de-plafond.html">Lampe de plafond</a></li>
-        <li><a href="lampadaires.html">Lampadaire</a></li>
-        <li><a href="lampes-de-mur.html">Lampe de mur</a></li>
         <li><a href="panier.html">Panier</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="suivi-commande.html">Suivre ma commande</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -113,22 +122,25 @@
       <p>Des lampes modernes, classiques et design pour chaque espace de votre maison.</p>
     </section>
 
-    <section class="produits-en-vedette">
-      <h2>Produits en vedette</h2>
-      <div class="grille-produits">
-        <div class="carte-produit">
-          <img src="images/lamp1.jpg" alt="Lampe Moderne">
-          <h3>Lampe Moderne</h3>
-          <p>4 000 DA</p>
-          <a href="produits/lampe-moderne.html" class="btn">Voir le produit</a>
-        </div>
-        <div class="carte-produit">
-          <img src="images/lamp2.jpg" alt="Lampe Vintage">
-          <h3>Lampe Vintage</h3>
-          <p>3 500 DA</p>
-          <a href="produits/lampe-vintage.html" class="btn">Voir le produit</a>
-        </div>
-        <!-- Ajoutez plus de produits ici -->
+    <section class="categories-lampes">
+      <h2>Découvrez nos catégories de lampes</h2>
+      <div class="grille-categories">
+        <a href="lampes-de-table.html" class="carte-categorie">
+          <img src="images/table-lamp.jpg" alt="Lampe de table">
+          <h3>Lampe de table</h3>
+        </a>
+        <a href="lampes-de-plafond.html" class="carte-categorie">
+          <img src="images/ceiling-lamp.jpg" alt="Lampe de plafond">
+          <h3>Lampe de plafond</h3>
+        </a>
+        <a href="lampadaires.html" class="carte-categorie">
+          <img src="images/floor-lamp.jpg" alt="Lampadaire">
+          <h3>Lampadaire</h3>
+        </a>
+        <a href="lampes-de-mur.html" class="carte-categorie">
+          <img src="images/wall-lamp.jpg" alt="Lampe de mur">
+          <h3>Lampe de mur</h3>
+        </a>
       </div>
     </section>
   </main>
